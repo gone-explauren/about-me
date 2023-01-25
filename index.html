@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,86 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<h2>You wanna learn HTML?</h2>
-<p>Yes!</p>
-<h2>Kick ass at CSS?</h2>
-<p>Yes!</p>
-<h2>Make JavaScript your bitch?</h2>
-<p>I better work like, really really hard and put forth my best effort so that I can become the best coder I can be and maybe one day I'll get a fun and fulfilling career in tech and make my mama real proud of me.</p>
-<br>
-<p>Oh, and I guess here's a lil more about me...</p>
-<br>
-<h4>Hey Laurel, where did you go to school?</h4>
-<p>Oh, good question! I graduated from the University of Oregon in 2020 with a degree in Art and a focus in Photography. I minored in Korean, just for fun I guess. Don't ask me to translate anything for you, though, because you'd be SOL.</p>
-<p>I'm currently enrolled in a Software Developer bootcamp through Code Fellows in Seattle, WA, and I'm having a great time!</p>
-<h4>Hey Laurel, what about your career experience?</h4>
-<p>I have some of that! Right out of high school, I joined the Navy as an Aviation Electronics Technician. I worked on helicopters in San Diego, and then lived on a ship for a year in Norfolk Virginia.</p>
-<p>I got a part time job as a cashier at Whole Foods Market while I was in school, and then went full time after graduation. I became the Associate Team Lead of the Custmer Service Department and learned a lot about the administrative side of the retail industry.</p>
-<h4>Hey Laurel, what's next?</h4>
-<p>Next I'm going to improve my coding skills, become a rock star dev, and fill my pockets with Benjamins &#129297;&#129297;&#129297; </p>
+	<h1>You wanna learn HTML?</h1>
+	<p>Yes!</p>
+	<h2>Kick ass at CSS?</h2>
+	<p>Yes!</p>
+	<h3>Make JavaScript your bitch?</h3>
+	<p>I better work like, really really hard and put forth my best effort so that I can become the best coder I can be and maybe one day I'll get a fun and fulfilling career in tech and make my mama real proud of me.</p>
+	<br>
+	<p>Oh, and I guess here's a lil more about me...</p>
+	<br>
+	<section class="school">
+		<h4>Hey Laurel, where did you go to school?</h4>
+		<p>Oh, good question!</p>
+		<ul>
+			<li>I graduated from the University of Oregon in 2020 with a degree in Art and a focus in Photography.</li>
+			<li>I minored in Korean, just for fun I guess.</li>
+			<li>Don't ask me to translate anything for you, though, because you'd be SOL.</li>
+			</ul>
+		<p>I'm currently enrolled in a Software Developer bootcamp through Code Fellows in Seattle, WA, and I'm having a great time!</p>
+		</section>
+	<section class="work">
+		<h5>Hey Laurel, what about your career experience?</h5>
+	<p>I have some of that!</p>
+		<ul>
+			<li>Right out of high school, I joined the Navy as an Aviation Electronics Technician.</li>
+			<li>I worked on helicopters in San Diego, and then lived on a ship for a year in Norfolk Virginia.</li>
+		<li>I got a part time job as a cashier at Whole Foods Market while I was in school, and then went full time after graduation</li>
+		<li>I became the Associate Team Lead of the Custmer Service Department and learned a lot about the administrative side of the retail industry.</li>
+		</ul>
+		</section>
+	<section class="goals">
+		<h6>Hey Laurel, what's next?</h6>
+		<p>Next I'm going to improve my coding skills, become a rock star dev, and fill my pockets with Benjamins
+		&#129297;&#129297;&#129297; </p>
+		</section>
+		<section>
+			<p>I have to add some more things to my website now, so enjoy this lovely list of my</p>
+			<h7>Top Ten Favorite Vegan Cheeses</h7>
+			<!-- ol>li*10 -->
+			<ol>
+				<li>Violife Mozzerella 
+					Shreds</li>
+					<p>Tastes great on pizza and melts almost like the real thing, no harm involved. Truly a superior cheese.</p>
+				<li>Forager Queso Fresco</li>
+				<p>Adds a perfect gooey texture to enchiladas. Chef's kiss.</p>
+				<li>Miyoko's Garlic Herb Cheese</li>
+				<p>Perfect cheese for a charcuterie board alongside some mushroom jerky.</p>
+				<li>Daiya Key Lime Cheezecake</li>
+				<p>The only acceptable product from Daiya and yes cheesecake counts as cheese, don't @ me.</p>
+				<li>Babybel Plant Based Cheese</li>
+				<p>We sampled this once at Whole Foods and my boss said, "They got the flavor right, but the texture feels like rubber." I couldn't tell, but I also don't remember what animal cheese feels like, so whatever.</p>
+				<li>365 Vegan Mozzerella</li>
+				<p>Speaking of WFM, this store brand cheese is a good, cheap substitute for my number one pick, the Violife mozz. It's perfect if you're still a week out from payday but need to use up that dough ball in your freezer.</p>
+				<li>Treeline Goat Cheese</li>
+				<p>Another great one for your cheese board.</p>
+				<li>Feild Road Chao Slices</li>
+				<p>A perfect grilled cheese go-to. I reccommend the Tomato Cayenne flavor.</p>
+				<li>Nuts for Cheese Un-Brie-Lievable</li>
+				<p>Authentic tasting cheese to pair with wine and feel fancy. They also make a vegan bleu cheese, but tbh I haven't tred it and I'm a lil nervous to.</p>
+				<li>Follow Your Heart Parmesan</li>
+				<p>Another pizza party must-have. The first vegan cheese brand I ever tried, Follow Your Heart will always have a special place in my fridge.</p>
+			</ol>
+		</section>
+	
+	<!--
+		all HTML elements except script default to display block or display inline
+		-Block (<div>, <p>, )
+			take up the entire width of their elements
+			will knock any sibling element to the next line
+		-Inline (<span>, )
+			only the width of their content
+			flow with the content around them
+			don't have margin on top or bottom, only on left or right
+
+		display: inline-block (or block, or inline)
+			// can override the default display of the element
+		
+	-->
 	<script src="js/app.js"></script>
 </body>
+
 </html>
