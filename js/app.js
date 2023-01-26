@@ -123,6 +123,7 @@ inBikini();
 
 // if I add the .toLowerCase after the prompt, it will make writing code easier for me, as well as make the code more readable :) It does the same thing as the way I wrote it above.
 
+function liveFancy() {
 let fancy = prompt('You wanna live fancy?').toLowerCase();
 
 if (fancy === 'yes' || fancy === 'y') {
@@ -135,7 +136,10 @@ if (fancy === 'yes' || fancy === 'y') {
 } else {
 	// console.log('Quit playin\' me.')
 	alert('Quit playin\' me.')
-};
+}
+}
+liveFancy();
+
 
 let mansion = prompt('Live in a big mansion?').toLowerCase();
 
