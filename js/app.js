@@ -220,6 +220,7 @@ laurelCry();
 
 alert('Let\'s play one more, and keep with the theme...')
 
+function britneyEra () {
 
 let userResponse= prompt('What is my favorite Britney era?').toLowerCase();
 let faveBritney= ['toxic', 'gimme more', 'hold it against me', 'stronger'];
@@ -258,6 +259,9 @@ for (let j = 0; j < faveBritney.length; j++) {
 	if (attemptsRemaining === 0) {
 console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.');
 }
+}
+britneyEra ();
+// end of question logic.
 
 alert('So, how did you do?');
 alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`);
