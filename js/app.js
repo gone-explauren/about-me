@@ -140,7 +140,7 @@ if (fancy === 'yes' || fancy === 'y') {
 }
 liveFancy();
 
-
+function liveMansion() {
 let mansion = prompt('Live in a big mansion?').toLowerCase();
 
 if (mansion === 'yes' || mansion === 'y') {
@@ -153,7 +153,11 @@ if (mansion === 'yes' || mansion === 'y') {
 } else {
 	// console.log(`C'mon now ${username}.`)
 	alert(`C'mon now ${username}.`)
-};
+}
+}
+liveMansion();
+
+
 
 let partyInFrance = prompt('Party in France?').toLowerCase();
 
