@@ -1,7 +1,9 @@
 'use strict';
 console.log('hello');
 let numberCorrect= 0;
+let username = getUserName();
 
+function getUserName () {
 let username = prompt('Who\'s that sexy babe?');
 console.log('I\'m looking respectfully');
 alert('It\'s ' + username + ', bitch.');
@@ -19,8 +21,14 @@ if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 } else {
 	// console.log('I\'m sorry, I don\'t uderstand your accent.')
 	alert('I\'m sorry, I don\'t understand your accent.')
-};
+}
 
+return username;
+}  
+getUserName();
+
+
+function wantBugatti () {
 let bugatti = prompt('You want a Bugatti?');
 
 if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
@@ -33,8 +41,11 @@ if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
 } else {
 	// console.log('Come again?')
 	alert('Come again?')
-};
+}
+}
+wantBugatti();
 
+function wantMaserati () {
 let maserati = prompt('You want a Maserati?');
 
 if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
@@ -47,8 +58,12 @@ if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
 } else {
 	// console.log('Say what?')
 	alert('Say what?')
-};
+}
+}
+wantMaserati();
 
+
+function wantLambo() {
 let lambo = prompt('You want a Lamborghini?');
 
 if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
@@ -61,10 +76,16 @@ if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
 } else {
 	// console.log('What do you mean by that?')
 	alert('What do you mean by that?')
-};
+}
+}
+wantLambo();
+
+
 
 // Assignment questions 6 and 7 will be down below bc I can't cut Britney off mid chorus, srry.
 
+
+function wantMartini() {
 let sipMartini = prompt('Sip martinis?');
 
 if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
@@ -77,8 +98,11 @@ if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
 } else {
 	// console.log('Hm?')
 	alert('Hm?')
-};
+}
+}
+wantMartini();
 
+function inBikini() {
 let hotBikini = prompt('Look hot in a bikini?');
 
 if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
@@ -91,10 +115,15 @@ if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
 } else {
 	// console.log('You think you\'re funny, punk?')
 	alert('You think you\'re funny, punk?')
- };
+ }
+}
+inBikini();
+
+
 
 // if I add the .toLowerCase after the prompt, it will make writing code easier for me, as well as make the code more readable :) It does the same thing as the way I wrote it above.
 
+function liveFancy() {
 let fancy = prompt('You wanna live fancy?').toLowerCase();
 
 if (fancy === 'yes' || fancy === 'y') {
@@ -107,8 +136,11 @@ if (fancy === 'yes' || fancy === 'y') {
 } else {
 	// console.log('Quit playin\' me.')
 	alert('Quit playin\' me.')
-};
+}
+}
+liveFancy();
 
+function liveMansion() {
 let mansion = prompt('Live in a big mansion?').toLowerCase();
 
 if (mansion === 'yes' || mansion === 'y') {
@@ -121,8 +153,12 @@ if (mansion === 'yes' || mansion === 'y') {
 } else {
 	// console.log(`C'mon now ${username}.`)
 	alert(`C'mon now ${username}.`)
-};
+}
+}
+liveMansion();
 
+
+function partyFrance() {
 let partyInFrance = prompt('Party in France?').toLowerCase();
 
 if (partyInFrance === 'yes' || partyInFrance === 'y') {
@@ -135,11 +171,16 @@ if (partyInFrance === 'yes' || partyInFrance === 'y') {
 } else {
 	// console.log('Alright party pooper, we\'re done now.')
 	alert('Alright party pooper, we\'re done now.')
-};
+}
+}
+partyFrance();
+
 
 
 alert(`Okay ${username}, next game!`)
 
+
+function laurelCry() {
 // This prompt could also go inside the for loop so the question is asked multiple times, instead of repeating the prompt like I did below
 let number= prompt('How many times have I cried this week?').toLowerCase();
 // .toLowerCase is not needed since my answer is a number and not a string.
@@ -173,9 +214,13 @@ for (let i = 0; i < attempts; i++) {
 if (attempts === 0) {
 	console.log('Ohh, too bad. The correct answer is 0! I\'m unstoppable, baby!')
 }
+}
+laurelCry();
+
 
 alert('Let\'s play one more, and keep with the theme...')
 
+function britneyEra () {
 
 let userResponse= prompt('What is my favorite Britney era?').toLowerCase();
 let faveBritney= ['toxic', 'gimme more', 'hold it against me', 'stronger'];
@@ -214,6 +259,9 @@ for (let j = 0; j < faveBritney.length; j++) {
 	if (attemptsRemaining === 0) {
 console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.');
 }
+}
+britneyEra ();
+// end of question logic.
 
 alert('So, how did you do?');
 alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`);
