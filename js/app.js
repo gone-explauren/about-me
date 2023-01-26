@@ -25,7 +25,10 @@ if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 
 return username;
 }  
+getUserName();
 
+
+function wantBugatti () {
 let bugatti = prompt('You want a Bugatti?');
 
 if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
@@ -38,7 +41,10 @@ if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
 } else {
 	// console.log('Come again?')
 	alert('Come again?')
-};
+}
+}
+wantBugatti();
+
 
 let maserati = prompt('You want a Maserati?');
 
