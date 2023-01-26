@@ -45,7 +45,7 @@ if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
 }
 wantBugatti();
 
-
+function wantMaserati () {
 let maserati = prompt('You want a Maserati?');
 
 if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
@@ -58,7 +58,10 @@ if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
 } else {
 	// console.log('Say what?')
 	alert('Say what?')
-};
+}
+}
+wantMaserati();
+
 
 let lambo = prompt('You want a Lamborghini?');
 
