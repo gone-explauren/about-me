@@ -1,7 +1,9 @@
 'use strict';
 console.log('hello');
 let numberCorrect= 0;
+let username = getUserName();
 
+function getUserName () {
 let username = prompt('Who\'s that sexy babe?');
 console.log('I\'m looking respectfully');
 alert('It\'s ' + username + ', bitch.');
@@ -19,7 +21,10 @@ if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 } else {
 	// console.log('I\'m sorry, I don\'t uderstand your accent.')
 	alert('I\'m sorry, I don\'t understand your accent.')
-};
+}
+
+return username;
+}  
 
 let bugatti = prompt('You want a Bugatti?');
 
