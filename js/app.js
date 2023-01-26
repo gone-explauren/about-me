@@ -63,6 +63,7 @@ if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
 wantMaserati();
 
 
+function wantLambo() {
 let lambo = prompt('You want a Lamborghini?');
 
 if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
@@ -75,7 +76,11 @@ if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
 } else {
 	// console.log('What do you mean by that?')
 	alert('What do you mean by that?')
-};
+}
+}
+wantLambo();
+
+
 
 // Assignment questions 6 and 7 will be down below bc I can't cut Britney off mid chorus, srry.
 
