@@ -93,8 +93,8 @@ if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
 	alert('You think you\'re funny, punk?')
  };
 
-
 // if I add the .toLowerCase after the prompt, it will make writing code easier for me, as well as make the code more readable :) It does the same thing as the way I wrote it above.
+
 let fancy = prompt('You wanna live fancy?').toLowerCase();
 
 if (fancy === 'yes' || fancy === 'y') {
@@ -137,15 +137,25 @@ if (partyInFrance === 'yes' || partyInFrance === 'y') {
 	alert('Alright party pooper, we\'re done now.')
 };
 
+
 alert(`Okay ${username}, next game!`)
 
+// This prompt could also go inside the for loop so the question is asked multiple times, instead of repeating the prompt like I did below
 let number= prompt('How many times have I cried this week?').toLowerCase();
+// .toLowerCase is not needed since my answer is a number and not a string.
 let cry= 0;
 let attempts= 4;
 
 for (let i = 0; i < attempts; i++) {
 	console.log(i)
+
 	// parseInt turns prompt "number" into an integer to match the integers defined by "cry" and "attempts"
+
+	// let num1= '26'
+	// let num2= '5'
+	// console.log(num1 + num2); will log 265
+	// console.log(parseInt(num1) + parseInt(num2)); will log 31
+
 	if (parseInt(number) === cry) {
 		// console.log('That\'s right! I\'ve got on my big boy pants this week.') 
 		alert('That\'s right!I\'ve got my big boy pants on this week.')
@@ -202,8 +212,44 @@ for (let j = 0; j < faveBritney.length; j++) {
 	}
 	
 	if (attemptsRemaining === 0) {
-console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.')
+console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.');
 }
 
 alert('So, how did you do?');
-alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`)
+alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`);
+
+/* 
+
+Writing Functions:
+
+console.log('Happy Birthday River!')
+console.log('I love you!')
+console.log('You\'re a sweet baby, River!')
+console.log('I\'ll give you get an extra treat since it's your special day!')
+// all this does is wish River a happy birthday. What about the other birds?
+// wrap this in a function and change "River" to a variable
+
+// function declaration
+// the second variable "gift" has a default value of "treat," but I can change it when envoking the function. 
+function birdyBirthdayGreeting(bird, gift = 'treat') {
+	console.log(`Happy Birthday ${bird}!`)
+	console.log('I love you!')
+	console.log('You\'re a sweet baby, ${bird}!')
+	console.log(`I'll give you get an extra ${gift} since it's your special day!`)
+}
+
+// envoke (or call) function
+// we need () on the end to make this happen
+// in these cases, Poppy gets a toy, and Shasta gets the default treat.
+birdyBirthdayGreeting();
+birdyBirthdayGreeting('Poppy', 'toy');
+birdyBirthdayGreeting('Shasta');
+
+// the method of decaring a function above can be envoked anywhere. With the method used below, the function can not be envoked before it is declared.
+// this is a function expression declaration.
+let birdyBirthdayGreetingAnotherWay = function() {
+	console.log('Happy birthday!') 
+	// etc. etc
+}
+
+*/
