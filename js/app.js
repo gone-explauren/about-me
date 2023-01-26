@@ -179,6 +179,8 @@ partyFrance();
 
 alert(`Okay ${username}, next game!`)
 
+
+function laurelCry() {
 // This prompt could also go inside the for loop so the question is asked multiple times, instead of repeating the prompt like I did below
 let number= prompt('How many times have I cried this week?').toLowerCase();
 // .toLowerCase is not needed since my answer is a number and not a string.
@@ -212,6 +214,9 @@ for (let i = 0; i < attempts; i++) {
 if (attempts === 0) {
 	console.log('Ohh, too bad. The correct answer is 0! I\'m unstoppable, baby!')
 }
+}
+laurelCry();
+
 
 alert('Let\'s play one more, and keep with the theme...')
 
