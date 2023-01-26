@@ -84,6 +84,8 @@ wantLambo();
 
 // Assignment questions 6 and 7 will be down below bc I can't cut Britney off mid chorus, srry.
 
+
+function wantMartini() {
 let sipMartini = prompt('Sip martinis?');
 
 if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
@@ -96,7 +98,10 @@ if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
 } else {
 	// console.log('Hm?')
 	alert('Hm?')
-};
+}
+}
+wantMartini();
+
 
 let hotBikini = prompt('Look hot in a bikini?');
 
