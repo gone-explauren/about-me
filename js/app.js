@@ -102,7 +102,7 @@ if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
 }
 wantMartini();
 
-
+function inBikini() {
 let hotBikini = prompt('Look hot in a bikini?');
 
 if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
@@ -115,7 +115,11 @@ if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
 } else {
 	// console.log('You think you\'re funny, punk?')
 	alert('You think you\'re funny, punk?')
- };
+ }
+}
+inBikini();
+
+
 
 // if I add the .toLowerCase after the prompt, it will make writing code easier for me, as well as make the code more readable :) It does the same thing as the way I wrote it above.
 
