@@ -158,7 +158,7 @@ if (mansion === 'yes' || mansion === 'y') {
 liveMansion();
 
 
-
+function partyFrance() {
 let partyInFrance = prompt('Party in France?').toLowerCase();
 
 if (partyInFrance === 'yes' || partyInFrance === 'y') {
@@ -171,7 +171,10 @@ if (partyInFrance === 'yes' || partyInFrance === 'y') {
 } else {
 	// console.log('Alright party pooper, we\'re done now.')
 	alert('Alright party pooper, we\'re done now.')
-};
+}
+}
+partyFrance();
+
 
 
 alert(`Okay ${username}, next game!`)
