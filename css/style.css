@@ -3,3 +3,22 @@
 }
 /* the star selector indicates everything. Use it very sparingly */
 
+main {
+	width: 80%;
+	margin: 3rem auto auto auto;
+	/* clockwise starting at top. top, right, bottom, left */
+}
+
+body {
+	
+	border: 3px solid hotpink;
+	background-color: lightcoral;
+	font-size: 1rem;
+}
+
+h1, h2, h3 {
+	font-size: 2rem;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}
+

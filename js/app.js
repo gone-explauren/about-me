@@ -1,7 +1,6 @@
 'use strict';
-console.log('hello');
+
 let numberCorrect= 0;
-let username = getUserName();
 
 function getUserName () {
 let username = prompt('Who\'s that sexy babe?');
@@ -9,8 +8,14 @@ console.log('I\'m looking respectfully');
 alert('It\'s ' + username + ', bitch.');
 // alert(`It's ${username}, bitch`); is a template (or string) literal. It's used to add a variable without using cancatonation (sp?)
 // this is used more often than what I'm using above. and I'll use this for the rest of the code :)
+return username;
+}
+getUserName();
+
+function()
+// "You better work, bitch" could be set as a global variable correctAnswer, but it would still need to be called inside every function, so I may as well leave it as is
 let hotBody = prompt('You wanna hot body?');
-// the || below is called logical or. && is called logical and. If the && was used insted, then each statement would have to be true to alert "You better work, bitch"
+// the || below is called logical or. && is called "logical and."" If the && was used instead, then each statement would have to be true to alert "You better work, bitch"
 if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 	// console.log('You better work, bitch')
 	alert('You better work, bitch.')
@@ -23,9 +28,6 @@ if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 	alert('I\'m sorry, I don\'t understand your accent.')
 }
 
-return username;
-}  
-getUserName();
 
 
 function wantBugatti () {
@@ -122,7 +124,6 @@ inBikini();
 
 
 // if I add the .toLowerCase after the prompt, it will make writing code easier for me, as well as make the code more readable :) It does the same thing as the way I wrote it above.
-
 function liveFancy() {
 let fancy = prompt('You wanna live fancy?').toLowerCase();
 
@@ -181,14 +182,13 @@ alert(`Okay ${username}, next game!`)
 
 
 function laurelCry() {
-// This prompt could also go inside the for loop so the question is asked multiple times, instead of repeating the prompt like I did below
-let number= prompt('How many times have I cried this week?').toLowerCase();
-// .toLowerCase is not needed since my answer is a number and not a string.
 let cry= 0;
 let attempts= 4;
 
 for (let i = 0; i < attempts; i++) {
 	console.log(i)
+	let number= prompt('How many times have I cried this week?').toLowerCase();
+// .toLowerCase is not needed since my answer is a number and not a string.
 
 	// parseInt turns prompt "number" into an integer to match the integers defined by "cry" and "attempts"
 
@@ -250,12 +250,10 @@ for (let j = 0; j < faveBritney.length; j++) {
 		//console.log(`Try again, you have ${attemptsRemaining} attempts remaining`);
 		alert(`Try again, you have ${attemptsRemaining} attempts remaining`);
 		userResponse= prompt('What is my favorite Britney era?');
-
 		if(attemptsRemaining === 0) {
 			break
 		}
 	}
-	
 	if (attemptsRemaining === 0) {
 console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.');
 }
@@ -299,5 +297,26 @@ let birdyBirthdayGreetingAnotherWay = function() {
 	console.log('Happy birthday!') 
 	// etc. etc
 }
+
+*/
+
+/*
+
+Array methods:
+
+.push(); add a value to the end of an array
+.unshift(); add a value to the beginning of an array
+.pop(); remove the last item of an array
+.splice(); change the values inside the middle of an array
+	it takes in at 2 arguments.
+	the first is the index of the first item you want to remove
+	and then the total items you want remove
+	if you don't want to remove any items, you just want to add, the number of items you want to remove will be 0
+	then you would add the item you want to add.
+	multiple items can be added this way.
+months.splice(1, 0, 'March', 'April');
+	if February is at index 0 and we want March at index 1, we don't want to remove any values, and we add March and April.
+You can also log the push/nshift/pop/splice data as a variable to store it and call it back later
+	let monthUnshift = (month.unshift())
 
 */
