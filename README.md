@@ -1,4 +1,4 @@
-# Lab-02, -03, -04
+# Lab-02, -03, -04, -05b
 
 ## About-Me
 
@@ -12,9 +12,13 @@ I'm building a website all about me, my goals, and Britney Spears I guess, using
 
 * I used <https://medium.com/markdown-monster-blog/getting-images-into-markdown-documents-and-weblog-posts-with-markdown-monster-9ec6f353d8ec> to help me link the photo here in the ReadMe.
 
-* Phil Chaplin and TA Mike helped me escape my nested loops in Lab-03
+* Phil Chaplin and TA Mike helped me escape my nested loops in Lab-03.
 
-* Kyle Freemantle was my Programming Partner for Lab-04
+* Kyle Freemantle was my Programming Partner for Lab-04.
+
+* Deon Curry helped my figure out how to make my image circular using CSS.
+
+* Phil Chaplin showed me how to get the gradient header on my page using CSS.
 
 ### Lighthouse Accessibility Report Score
 

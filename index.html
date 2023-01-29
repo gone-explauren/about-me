@@ -11,46 +11,70 @@
 </head>
 
 <body>
+	<header class="sticky-top">
+		<h1>Hello there, <span id="username"></span>.</h1>
+		<h2>Allow me to introduce myself...</h2>
+	</header>
+	<img src="img/Profile-Pic.jpg" alt="Profile picture">
+	<section id="bio">
+		<div class="content">
+			<p>My name is Laurel, I live in Seattle, and I love hiking, live music, my pet birds, and houseplants.</p> 
+			<p>I don't know how to ski, but I have been skydiving. My favorite movie is Amélie (2001), my favorite planet is Saturn, and my favorite dinosaur is the triceratops.</p>
+		</div>
+	</section>
 	<main>
-	<h1>You wanna learn HTML?</h1>
-	<p>Yes!</p>
-	<h2>Kick ass at CSS?</h2>
-	<p>Yes!</p>
-	<h3>Make JavaScript your bitch?</h3>
-	<p>I better work like, really really hard and put forth my best effort so that I can become the best coder I can be and maybe one day I'll get a fun and fulfilling career in tech and make my mama real proud of me.</p>
-	<br>
-	<p>Oh, and I guess here's a lil more about me...</p>
-	<br>
-	<section class="school">
+	<section id="school">
+		<div class="content">
 		<h4>Hey Laurel, where did you go to school?</h4>
+		<br>
 		<p>Oh, good question!</p>
+		<br>
 		<ul>
-			<li>I graduated from the University of Oregon in 2020 with a degree in Art and a focus in Photography.</li>
-			<li>I minored in Korean, just for fun I guess.</li>
-			<li>Don't ask me to translate anything for you, though, because you'd be SOL.</li>
-			</ul>
-		<p>I'm currently enrolled in a Software Developer bootcamp through Code Fellows in Seattle, WA, and I'm having a great time!</p>
+		<li>I graduated from the University of Oregon in 2020 with a degree in Art and a focus in Photography.</li>
+		<li>I minored in Korean, just for fun I guess.</li>
+		<li>Don't ask me to translate anything for you, though, because you'd be straight outta luck.</li>
+		</ul>
+		<br>
+		<p>I'm currently enrolled in a Software Developer bootcamp through Code Fellows in Seattle, WA. I'm learning a lot about html, CSS, and JavaScript, and I'm having a great time!</p>
+		</div>
 		</section>
-	<section class="work">
+	<section id="work">
+		<div class="content">
 		<h5>Hey Laurel, what about your career experience?</h5>
+		<br>
 	<p>I have some of that!</p>
+	<br>
 		<ul>
-			<li>Right out of high school, I joined the Navy as an Aviation Electronics Technician.</li>
-			<li>I worked on helicopters in San Diego, and then lived on a ship for a year in Norfolk Virginia.</li>
-		<li>I got a part time job as a cashier at Whole Foods Market while I was in school, and then went full time after graduation</li>
+		<li>Right out of high school, I joined the Navy as an Aviation Electronics Technician.</li>
+		<li>I worked on helicopters in San Diego, and then lived on a ship for a year in Norfolk Virginia.</li>
+		<br>
+		<li>I got a part time job as a cashier at Whole Foods Market while I was in school, and then went full time after graduation.</li>
 		<li>I became the Associate Team Lead of the Custmer Service Department and learned a lot about the administrative side of the retail industry.</li>
 		</ul>
+		</div>
 		</section>
-	<section class="goals">
+	<section id="goals">
+		<div class="content">
 		<h6>Hey Laurel, what's next?</h6>
-		<p>Next I'm going to improve my coding skills, become a rock star dev, and fill my pockets with Benjamins
-		&#129297;&#129297;&#129297; </p>
-		</section>
 		<br>
-		<section>
-			<p>I have to add some more things to my website now, so enjoy this lovely list of my</p>
-			<br>
+		<ul>
+		<li>Next I'm going to improve my coding skills, become a rock star dev, make my mama proud of me, and fill my pockets with Benjamins</li>
+		<br>
+		<li>&#129297;&#129297;&#129297; </li>
+		<br>
+		<li>Outside of school, I'm also learning American Sign Language and writing a book of poetry, as well as working on some conceptual photography projects.</li>
+		<br>
+		<li>I always have a new skill I want to learn or improve upon because, after all, curiosity is the spice of life, or something like that.</li>
+		</ul>
+		</div>
+		</section>
+		</main>
+		<br>
+		<section id="top-ten">
+			<p>Per the assignment, I have to add some more things to my website now, so enjoy this lovely list of my</p>
 			<h7>Top Ten Favorite Vegan Cheeses</h7>
+			<div>
+				<br>
 			<!-- ol>li*10 -->
 			<ol>
 				<li>Violife Mozzerella 
@@ -75,9 +99,9 @@
 				<li>Follow Your Heart Parmesan</li>
 				<p>Another pizza party must-have. The first vegan cheese brand I ever tried, Follow Your Heart will always have a special place in my fridge.</p>
 			</ol>
+			</div>
 		</section>
-	<br>
-	<br>
+		<br>
 	<!--
 		all HTML elements except script default to display block or display inline
 		-Block (<div>, <p>, )
@@ -93,10 +117,11 @@
 		
 	-->
 	<footer>
-		<p>page by Laurel Perkins for Code-201 at Code Fellows SDE bootcamp</p>
+		<p>~page by Laurel Perkins, 2023~</p>
 	</footer>
-	</main>
-	<!-- <script src="js/app.js"></script> -->
+
+	<script src="js/app.js"></script>
+
 </body>
 
 </html>

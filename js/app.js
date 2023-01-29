@@ -2,47 +2,53 @@
 
 let numberCorrect= 0;
 
-function getUserName () {
-let username = prompt('Who\'s that sexy babe?');
-console.log('I\'m looking respectfully');
-alert('It\'s ' + username + ', bitch.');
-// alert(`It's ${username}, bitch`); is a template (or string) literal. It's used to add a variable without using cancatonation (sp?)
-// this is used more often than what I'm using above. and I'll use this for the rest of the code :)
-return username;
-}
-getUserName();
+const getUsername = () => {
+	let username = prompt('Who\'s that sexy bitch?')
+	console.log(`I'm looking respectfully, ${username}.`)
+	alert(`It's ${username}, bitch.`)
+	
+	// // get the span where userName will be displayed
+	let mySpan = document.getElementById('username')
+	
+	// // insert the userName
+	mySpan.textContent = username
 
-function()
+	return username
+}
+
+let username = getUsername()
+
+function wantHotBody() {
 // "You better work, bitch" could be set as a global variable correctAnswer, but it would still need to be called inside every function, so I may as well leave it as is
 let hotBody = prompt('You wanna hot body?');
 // the || below is called logical or. && is called "logical and."" If the && was used instead, then each statement would have to be true to alert "You better work, bitch"
 if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (hotBody.toLowerCase() === 'no' || hotBody.toLowerCase() === 'n') {
-	// console.log('Yes, you do.')
-	alert('Yes, you do.')
+	console.log('Yes, you do.')
+	// alert('Yes, you do.')
 } else {
-	// console.log('I\'m sorry, I don\'t uderstand your accent.')
-	alert('I\'m sorry, I don\'t understand your accent.')
+	console.log('What was that?')
+	// alert('What was that?')
 }
-
+}
 
 
 function wantBugatti () {
 let bugatti = prompt('You want a Bugatti?');
 
 if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (bugatti.toLowerCase() === 'no' || bugatti.toLowerCase() === 'n') {
-	// console.log('Quit lyin\'.')
-	alert('Quit lyin\'.')
+	console.log('Just play along, okay?')
+	// alert('Just play along, okay?')
 } else {
-	// console.log('Come again?')
-	alert('Come again?')
+	console.log('Come again?')
+	// alert('Come again?')
 }
 }
 wantBugatti();
@@ -51,15 +57,15 @@ function wantMaserati () {
 let maserati = prompt('You want a Maserati?');
 
 if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch.')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (maserati.toLowerCase() === 'no' || maserati.toLowerCase() === 'n') {
-	// console.log('I don\'t believe you.')
-	alert('I don\'t believe you.')
+	console.log('I don\'t believe you.')
+	// alert('I don\'t believe you.')
 } else {
-	// console.log('Say what?')
-	alert('Say what?')
+	console.log('Did you say something?')
+	// alert('Did you say something?')
 }
 }
 wantMaserati();
@@ -69,15 +75,15 @@ function wantLambo() {
 let lambo = prompt('You want a Lamborghini?');
 
 if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch.')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (lambo.toLowerCase() === 'no' || lambo.toLowerCase() === 'n') {
-	// console.log('Don\'t play.')
-	alert('Don\'t play.')
+	console.log('Don\'t play.')
+	// alert('Don\'t play.')
 } else {
-	// console.log('What do you mean by that?')
-	alert('What do you mean by that?')
+	console.log('What do you mean?')
+	// alert('What do you mean?')
 }
 }
 wantLambo();
@@ -91,15 +97,15 @@ function wantMartini() {
 let sipMartini = prompt('Sip martinis?');
 
 if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert("You better work, bitch.")
+	console.log('You better work, bitch.')
+	// alert("You better work, bitch.")
 	numberCorrect += 1
 } else if (sipMartini.toLowerCase() === 'no' || sipMartini.toLowerCase() === 'n') {
-	// console.log('Oh, maybe you\'re sober, that\'s okay.')
-	alert('Oh, maybe you\'re sober, that\'s okay.')
+	console.log('Oh, maybe you\'re sober, that\'s okay.')
+	// alert('Oh, maybe you\'re sober, that\'s okay.')
 } else {
-	// console.log('Hm?')
-	alert('Hm?')
+	console.log('Hm?')
+	// alert('Hm?')
 }
 }
 wantMartini();
@@ -108,15 +114,15 @@ function inBikini() {
 let hotBikini = prompt('Look hot in a bikini?');
 
 if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch.')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (hotBikini.toLowerCase() === 'no' || hotBikini.toLowerCase() === 'n') {
-	// console.log('Everyone looks hot in a bikini!')
-	alert('Everyone looks hot in a bikini!')
+	console.log('You already do, babe.')
+	// alert('You already do, babe.')
 } else {
-	// console.log('You think you\'re funny, punk?')
-	alert('You think you\'re funny, punk?')
+	 console.log('You think you\'re funny, punk?')
+	// alert('You think you\'re funny, punk?')
  }
 }
 inBikini();
@@ -128,15 +134,15 @@ function liveFancy() {
 let fancy = prompt('You wanna live fancy?').toLowerCase();
 
 if (fancy === 'yes' || fancy === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch.')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (fancy === 'no' || fancy === 'n') {
-	// console.log('Get bougie, bitch.')
-	alert('Get bougie, bitch.')
+	console.log('Get bougie, bitch.')
+	// alert('Get bougie, bitch.')
 } else {
-	// console.log('Quit playin\' me.')
-	alert('Quit playin\' me.')
+	console.log('Quit playin\'.')
+	// alert('Quit playin\'.')
 }
 }
 liveFancy();
@@ -145,15 +151,15 @@ function liveMansion() {
 let mansion = prompt('Live in a big mansion?').toLowerCase();
 
 if (mansion === 'yes' || mansion === 'y') {
-	// console.log('You better work, bitch')
-	alert('You better work, bitch.')
+	console.log('You better work, bitch.')
+	// alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (mansion === 'no' || mansion === 'n') {
-	// console.log('Yeah, that\'s a lot to clean.')
-	alert('Yeah, that\'s a lot to clean...')
+	console.log('Yeah, that\'s a lot to clean.')
+	// alert('Yeah, that\'s a lot to clean...')
 } else {
-	// console.log(`C'mon now ${username}.`)
-	alert(`C'mon now ${username}.`)
+	console.log(`You're killin' me, ${username}.`)
+	// alert(`You're killin me, ${username}.`)
 }
 }
 liveMansion();
@@ -167,11 +173,11 @@ if (partyInFrance === 'yes' || partyInFrance === 'y') {
 	alert('You better work, bitch.')
 	numberCorrect += 1
 } else if (partyInFrance === 'no' || partyInFrance === 'n') {
-	// console.log('You sound kinda boring, no offense.')
-	alert('You sound kind of boring, no offense')
+	console.log('You sound kinda boring, no offense.')
+	// alert('You sound kind of boring, no offense')
 } else {
-	// console.log('Alright party pooper, we\'re done now.')
-	alert('Alright party pooper, we\'re done now.')
+	console.log('Alright, alright, we\'re done now.')
+	// alert('Alright, alright, we\'re done now.')
 }
 }
 partyFrance();
@@ -263,6 +269,117 @@ britneyEra ();
 
 alert('So, how did you do?');
 alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`);
+
+// **** Heart Snow **** not working **** i is undefined
+
+// Set the number of snowflakes (more than 30 - 40 not recommended)
+var snowmax=12;
+
+// Set the colors for the snow. Add as many colors as you like
+var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD","#ffffff","#ffc0cb");
+
+// Set the fonts, that create the snowflakes. Add as many fonts as you like
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS");
+
+// **** CHANGE YOUR IMAGE HERE ****
+
+// Set the letter that creates your snowflake (recommended: * )
+var snowletter="<img src=images/heart.png>";
+
+// Set the speed of sinking (recommended values range from 0.3 to 2)
+var sinkspeed=0.6;
+
+// Set the maximal-size of your snowflaxes
+var snowmaxsize=40;
+
+// Set the minimal-size of your snowflaxes
+var snowminsize=20;
+
+// Set the snowing-zone
+// Set 1 for all-over-snowing, set 2 for left-side-snowing
+// Set 3 for center-snowing, set 4 for right-side-snowing
+var snowingzone=1;
+
+// Do not edit below this line
+var snow=new Array();
+var marginbottom;
+var marginright;
+var timer;
+var i_snow=0;
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent;
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/);
+var ns6=document.getElementById&&!document.all;
+var opera=browserinfos.match(/Opera/);
+var browserok=ie5||ns6||opera;
+
+function randommaker(range) {
+    rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+		marginbottom = document.body.clientHeight
+		marginright = document.body.clientWidth
+ }
+ else if (ns6) {
+		marginbottom = window.innerHeight
+		marginright = window.innerWidth
+ }
+
+
+	var snowsizerange=snowmaxsize-snowminsize
+
+	for (i=0;i<=snowmax;i++) {
+	crds[i] = 0;
+	lftrght[i] = Math.random()*15;
+	x_mv[i] = 0.03 + Math.random()/10;
+	snow[i]=document.getElementById("s"+i)
+	snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+	snow[i].size=randommaker(snowsizerange)+snowminsize
+	snow[i].style.fontSize=snow[i].size
+	snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+	snow[i].sink=sinkspeed*snow[i].size/5
+	if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+	if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+	if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+	if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+	snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+	snow[i].style.left=snow[i].posx
+	snow[i].style.top=snow[i].posy
+	}
+
+
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+	crds[i] += x_mv[i];
+	snow[i].posy+=snow[i].sink
+	snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]) + 'px';
+	snow[i].style.top=snow[i].posy + 'px';
+
+	if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+	}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"px'>"+snowletter+"</span>")
+
+}
+
+window.onload=initsnow;
 
 /* 
 
