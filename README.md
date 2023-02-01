@@ -20,13 +20,14 @@ I'm building a website all about me, my goals, and Britney Spears I guess, using
 
 * Phil Chaplin showed me how to get the gradient header on my page using CSS, as well as how get the usernme to show up on the page, and make my page accessible on mobile. Thanks a bunch, Phil!
 
-* I used https://stackoverflow.com/questions/9630414/falling-hearts-animation-for-browsers to help add the falling hearts to my page, which was fun even though they still need some tweaking.
+* I used <https://stackoverflow.com/questions/9630414/falling-hearts-animation-for-browsers> to help add the falling hearts to my page, which was fun even though they still need some tweaking.
 
 ### Lighthouse Accessibility Report Score
 
 ![Lighthouse Score for Lab 2](img/Lab-02-Lighthouse.jpg)
 ![Lighthouse Score for Lab 3](img/Lab-03-Lighthouse.jpg)
 ![Lighthouse Score for Lab 4](img/Lab-04-Lighthouse.jpg)
+![Lighthouse Score for Final Project](img/Final-Lighthouse.jpg)
 
 ### Reflections and Comments
 
