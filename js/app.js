@@ -2,15 +2,16 @@
 
 let numberCorrect= 0;
 
+// const allows you to modify the value of an array, but the reference to that array cannot be changed
 const getUsername = () => {
-	let username = prompt('Who\'s that sexy bitch?')
+	let username = prompt('Who\'s that sexy babe?')
 	console.log(`I'm looking respectfully, ${username}.`)
 	alert(`It's ${username}, bitch.`)
 	
-	// // get the span where userName will be displayed
+	// get the span where username will be displayed
 	let mySpan = document.getElementById('username')
 	
-	// // insert the userName
+	// insert the username
 	mySpan.textContent = username
 
 	return username
@@ -21,7 +22,7 @@ let username = getUsername()
 function wantHotBody() {
 // "You better work, bitch" could be set as a global variable correctAnswer, but it would still need to be called inside every function, so I may as well leave it as is
 let hotBody = prompt('You wanna hot body?');
-// the || below is called logical or. && is called "logical and."" If the && was used instead, then each statement would have to be true to alert "You better work, bitch"
+// the || below is called "logical or." && is called "logical and." If the && was used instead, then each statement would have to be true to alert "You better work, bitch"
 if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
 	console.log('You better work, bitch')
 	// alert('You better work, bitch.')
@@ -159,7 +160,7 @@ if (mansion === 'yes' || mansion === 'y') {
 	// alert('Yeah, that\'s a lot to clean...')
 } else {
 	console.log(`You're killin' me, ${username}.`)
-	// alert(`You're killin me, ${username}.`)
+	// alert(`You're killin' me, ${username}.`)
 }
 }
 liveMansion();
@@ -188,61 +189,71 @@ alert(`Okay ${username}, next game!`)
 
 
 function laurelCry() {
-let cry= 0;
-let attempts= 4;
-
-for (let i = 0; i < attempts; i++) {
-	console.log(i)
-	let number= prompt('How many times have I cried this week?').toLowerCase();
+const cry= 12;
+const numGuess= 0;
+let attemptsRemaining= 4;
+let userResponse= prompt('How many times have I cried this week?'); //.toLowerCase();
 // .toLowerCase is not needed since my answer is a number and not a string.
 
-	// parseInt turns prompt "number" into an integer to match the integers defined by "cry" and "attempts"
+while (attemptsRemaining > numGuess) {
+	attemptsRemaining--;
 
-	// let num1= '26'
-	// let num2= '5'
-	// console.log(num1 + num2); will log 265
-	// console.log(parseInt(num1) + parseInt(num2)); will log 31
+/* 
 
-	if (parseInt(number) === cry) {
-		// console.log('That\'s right! I\'ve got on my big boy pants this week.') 
-		alert('That\'s right!I\'ve got my big boy pants on this week.')
-		console.log('Just kidding, it\'s cool to cry and we should all do it sometimes')
-		// add to my total number correct with += 1
-		numberCorrect += 1
-		// break out of the loop if the answer was correct
+parseInt turns prompt "number" into an integer to match the integers defined by "cry" and "attempts"
+
+let num1= '26'
+let num2= '5'
+console.log(num1 + num2); will log 265
+console.log(parseInt(num1) + parseInt(num2)); will log 31
+
+*/
+	
+	if (parseInt(userResponse) === cry) {
+	alert('If I round down, I mean')
+	console.log('It\'s cool to cry, you should try it.')
+	// add to my total number correct with += 1
+	numberCorrect += 1
+	// break out of the loop if the answer was correct
+	break
+} else {
+	console.log('Sorry babe, try again.');
+	alert(`Try again, you have ${attemptsRemaining} attempts remaining.`)
+	// repeat the prompt if answer was incorrect
+	userResponse= prompt('How many times have I cried this week?') //.toLowerCase();
+	if (numGuess === attemptsRemaining-1) {
 		break
-	} else {
-		console.log('Sorry babe, try again.')
-		// repeat the prompt if answer was incorrect
-		number= prompt('How many times have I cried this week?').toLowerCase();
 	}
 }
-if (attempts === 0) {
-	console.log('Ohh, too bad. The correct answer is 0! I\'m unstoppable, baby!')
+}
+if (numGuess === attemptsRemaining) {
+	alert('Ohh, too bad. The correct answer is 12. I\'m very in touch with my emotions.')
 }
 }
 laurelCry();
 
 
-alert('Let\'s play one more, and keep with the theme...')
+alert('That was fun! Let\'s play one more.')
 
-function britneyEra () {
+function genieWish () {
 
-let userResponse= prompt('What is my favorite Britney era?').toLowerCase();
-let faveBritney= ['toxic', 'gimme more', 'hold it against me', 'stronger'];
+const myWish= ['wealth redistribution', 'world peace', 'my mom to live forever'];
+const numGuess= 0;
 let attemptsRemaining= 6;
+let userResponse= prompt('A magic genie has promised to grant me three wishes. What do I wish for? (exact answers only)').toLowerCase();
+console.log('I know I make the rules, but I do with them what I want. Sorry.');
+
 // default answer is set as "false"
-let answerIsCorrect = false
-	for (let i = 0; i < attemptsRemaining; i--) {
+let answerIsCorrect = false;
+	for (let i = 0; i < numGuess; i++) {
 // inside first loop
 // console.log(attemptsRemaining)
-for (let j = 0; j < faveBritney.length; j++) {
+for (let j = 0; j < myWish.length; j++) {
 		// inside second loop, this code is all running thr loop through the array I made
-		if (userResponse === faveBritney[j]) {
+		if (userResponse === myWish[j]) {
 			numberCorrect += 1;
 			answerIsCorrect = true;
-			console.log('What a queen, am I right?');
-			alert(`Yes! I love ${userResponse}`);
+			alert('It\'s like you read my mind!');
 			break
 		}
 	}
@@ -255,22 +266,22 @@ for (let j = 0; j < faveBritney.length; j++) {
 		attemptsRemaining -= 1
 		//console.log(`Try again, you have ${attemptsRemaining} attempts remaining`);
 		alert(`Try again, you have ${attemptsRemaining} attempts remaining`);
-		userResponse= prompt('What is my favorite Britney era?');
-		if(attemptsRemaining === 0) {
+		userResponse= prompt('Can you figure out one of my genie wishes?');
+		if(numGuess === attemptsRemaining -1) {
 			break
 		}
 	}
 	if (attemptsRemaining === 0) {
-console.log('I\'m sure you agree that the Toxic, Gimme More, Hold It Against Me, and Stronger eras were i c o n i c.');
+console.log(`Nice try, but I wished for ${myWish[0]}, ${myWish[1]}, and for ${myWish[2]}.`);
 }
 }
-britneyEra ();
+genieWish();
 // end of question logic.
 
 alert('So, how did you do?');
-alert(`Congratulations! You got ${numberCorrect} questions correct! Thank's for playing.`);
+alert(`Congratulations! You got ${numberCorrect} questions correct! Thanks for playing.`);
 
-// **** Heart Snow **** not working **** i is undefined
+// **** Heart Snow **** 
 
 // Set the number of snowflakes (more than 30 - 40 not recommended)
 var snowmax=12;
@@ -284,16 +295,16 @@ var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS");
 // **** CHANGE YOUR IMAGE HERE ****
 
 // Set the letter that creates your snowflake (recommended: * )
-var snowletter="<img src=images/heart.png>";
+var snowletter="<img src=img/heart.png>";
 
 // Set the speed of sinking (recommended values range from 0.3 to 2)
-var sinkspeed=0.6;
+var sinkspeed=0.8;
 
 // Set the maximal-size of your snowflaxes
-var snowmaxsize=40;
+var snowmaxsize=20;
 
 // Set the minimal-size of your snowflaxes
-var snowminsize=20;
+var snowminsize=15;
 
 // Set the snowing-zone
 // Set 1 for all-over-snowing, set 2 for left-side-snowing
@@ -316,7 +327,7 @@ var opera=browserinfos.match(/Opera/);
 var browserok=ie5||ns6||opera;
 
 function randommaker(range) {
-    rand=Math.floor(range*Math.random())
+    let rand=Math.floor(range*Math.random())
     return rand
 }
 
@@ -333,7 +344,7 @@ function initsnow() {
 
 	var snowsizerange=snowmaxsize-snowminsize
 
-	for (i=0;i<=snowmax;i++) {
+	for (let i=0;i<=snowmax;i++) {
 	crds[i] = 0;
 	lftrght[i] = Math.random()*15;
 	x_mv[i] = 0.03 + Math.random()/10;
@@ -357,7 +368,7 @@ function initsnow() {
 }
 
 function movesnow() {
-	for (i=0;i<=snowmax;i++) {
+	for (let i=0;i<=snowmax;i++) {
 	crds[i] += x_mv[i];
 	snow[i].posy+=snow[i].sink
 	snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]) + 'px';
@@ -372,9 +383,11 @@ function movesnow() {
 	}
 	}
 	var timer=setTimeout("movesnow()",50)
+	 return timer;
 }
 
-for (i=0;i<=snowmax;i++) {
+
+for (let i=0;i<=snowmax;i++) {
 	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"px'>"+snowletter+"</span>")
 
 }
@@ -435,5 +448,53 @@ months.splice(1, 0, 'March', 'April');
 	if February is at index 0 and we want March at index 1, we don't want to remove any values, and we add March and April.
 You can also log the push/nshift/pop/splice data as a variable to store it and call it back later
 	let monthUnshift = (month.unshift())
+
+*/
+
+/*
+
+// this array below is not a good choice for storing complex data
+const riverArray = [
+	'River',
+	6, 
+	gold-capped conure,
+	true,
+	true
+]
+
+// an onject would work better..
+let riverObject = {
+	// an object is mde of key-value pairs
+	// 'name' is the key and 'River' is its value.
+	name: 'River', 
+	age: 6,
+	species: gold-capped conure.
+	goodBird: true,
+	prettyBird: true
+	// if you use strings in your object like this, you have to use bracket notation
+	'favorite bird food': 'Zupreem fruit blend'
+	// function
+	speak: function(){
+		// console has secretly been an object this whole time!
+		console.log('I love you!');
+	}
+	faveTreats: ['almonds', 'banana', 'orange juice', 'pistash']
+	// below is an object within an object
+	health{
+		wingClipped: false;
+		checkUpThisYear: true;
+	}
+}
+
+// dot notation
+// <object-name>.<key-name>
+console.log(`My bird ${riverObject.name}, is a ${riverObject.age}-year-old ${riverObject.species}.`)
+console.log(`My bird ${this.name}, is a ${this.age}-year-old ${this.species}.`)
+
+// bracket notation
+// <object-name>['<key-name>']
+console.log(riverObject)['favoite bird food'];
+
+riverObject.speak
 
 */
