@@ -24,15 +24,15 @@ function wantHotBody() {
 	let hotBody = prompt('You wanna hot body?');
 	// the || below is called "logical or." && is called "logical and." If the && was used instead, then each statement would have to be true to alert "You better work, bitch"
 	if (hotBody.toLowerCase() === 'yes' || hotBody.toLowerCase() === 'y') {
-		console.log('You better work, bitch')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (hotBody.toLowerCase() === 'no' || hotBody.toLowerCase() === 'n') {
-		console.log('Yes, you do.')
-		// alert('Yes, you do.')
+		//console.log('Yes, you do.')
+		alert('Yes, you do.')
 	} else {
-		console.log('What was that?')
-		// alert('What was that?')
+		//console.log('What was that?')
+		alert('What was that?')
 	}
 }
 
@@ -41,15 +41,15 @@ function wantBugatti() {
 	let bugatti = prompt('You want a Bugatti?');
 
 	if (bugatti.toLowerCase() === 'yes' || bugatti.toLowerCase() === 'y') {
-		console.log('You better work, bitch')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (bugatti.toLowerCase() === 'no' || bugatti.toLowerCase() === 'n') {
-		console.log('Just play along, okay?')
-		// alert('Just play along, okay?')
+		//console.log('Just play along, okay?')
+		alert('Just play along, okay?')
 	} else {
-		console.log('Come again?')
-		// alert('Come again?')
+		//console.log('Come again?')
+		alert('Come again?')
 	}
 }
 wantBugatti();
@@ -58,15 +58,15 @@ function wantMaserati() {
 	let maserati = prompt('You want a Maserati?');
 
 	if (maserati.toLowerCase() === 'yes' || maserati.toLowerCase() === 'y') {
-		console.log('You better work, bitch.')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch.')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (maserati.toLowerCase() === 'no' || maserati.toLowerCase() === 'n') {
-		console.log('I don\'t believe you.')
-		// alert('I don\'t believe you.')
+		//console.log('I don\'t believe you.')
+		alert('I don\'t believe you.')
 	} else {
-		console.log('Did you say something?')
-		// alert('Did you say something?')
+		//console.log('Did you say something?')
+		alert('Did you say something?')
 	}
 }
 wantMaserati();
@@ -76,15 +76,15 @@ function wantLambo() {
 	let lambo = prompt('You want a Lamborghini?');
 
 	if (lambo.toLowerCase() === 'yes' || lambo.toLowerCase() === 'y') {
-		console.log('You better work, bitch.')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch.')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (lambo.toLowerCase() === 'no' || lambo.toLowerCase() === 'n') {
-		console.log('Don\'t play.')
-		// alert('Don\'t play.')
+		//console.log('Don\'t play.')
+		alert('Don\'t play.')
 	} else {
-		console.log('What do you mean?')
-		// alert('What do you mean?')
+		//console.log('What do you mean?')
+		alert('What do you mean?')
 	}
 }
 wantLambo();
@@ -98,15 +98,15 @@ function wantMartini() {
 	let sipMartini = prompt('Sip martinis?');
 
 	if (sipMartini.toLowerCase() === 'yes' || sipMartini.toLowerCase() === 'y') {
-		console.log('You better work, bitch.')
-		// alert("You better work, bitch.")
+		//console.log('You better work, bitch.')
+		alert("You better work, bitch.")
 		numberCorrect += 1
 	} else if (sipMartini.toLowerCase() === 'no' || sipMartini.toLowerCase() === 'n') {
-		console.log('Oh, maybe you\'re sober, that\'s okay.')
-		// alert('Oh, maybe you\'re sober, that\'s okay.')
+		//console.log('Oh, maybe you\'re sober, that\'s okay.')
+		alert('Oh, maybe you\'re sober, that\'s okay.')
 	} else {
-		console.log('Hm?')
-		// alert('Hm?')
+		//console.log('Hm?')
+		alert('Hm?')
 	}
 }
 wantMartini();
@@ -115,15 +115,15 @@ function inBikini() {
 	let hotBikini = prompt('Look hot in a bikini?');
 
 	if (hotBikini.toLowerCase() === 'yes' || hotBikini.toLowerCase() === 'y') {
-		console.log('You better work, bitch.')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch.')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (hotBikini.toLowerCase() === 'no' || hotBikini.toLowerCase() === 'n') {
-		console.log('You already do, babe.')
-		// alert('You already do, babe.')
+		//console.log('You already do, babe.')
+		alert('You already do, babe.')
 	} else {
-		console.log('You think you\'re funny, punk?')
-		// alert('You think you\'re funny, punk?')
+		//console.log('You think you\'re funny, punk?')
+		alert('You think you\'re funny, punk?')
 	}
 }
 inBikini();
@@ -135,15 +135,15 @@ function liveFancy() {
 	let fancy = prompt('You wanna live fancy?').toLowerCase();
 
 	if (fancy === 'yes' || fancy === 'y') {
-		console.log('You better work, bitch.')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch.')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (fancy === 'no' || fancy === 'n') {
-		console.log('Get bougie, bitch.')
-		// alert('Get bougie, bitch.')
+		//console.log('Get bougie, bitch.')
+		alert('Get bougie, bitch.')
 	} else {
-		console.log('Quit playin\'.')
-		// alert('Quit playin\'.')
+		//console.log('Quit playin\'.')
+		alert('Quit playin\'.')
 	}
 }
 liveFancy();
@@ -152,15 +152,15 @@ function liveMansion() {
 	let mansion = prompt('Live in a big mansion?').toLowerCase();
 
 	if (mansion === 'yes' || mansion === 'y') {
-		console.log('You better work, bitch.')
-		// alert('You better work, bitch.')
+		//console.log('You better work, bitch.')
+		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (mansion === 'no' || mansion === 'n') {
-		console.log('Yeah, that\'s a lot to clean.')
-		// alert('Yeah, that\'s a lot to clean...')
+		//console.log('Yeah, that\'s a lot to clean.')
+		alert('Yeah, that\'s a lot to clean...')
 	} else {
-		console.log(`You're killin' me, ${username}.`)
-		// alert(`You're killin' me, ${username}.`)
+		//console.log(`You're killin' me, ${username}.`)
+		alert(`You're killin' me, ${username}.`)
 	}
 }
 liveMansion();
@@ -170,15 +170,15 @@ function partyFrance() {
 	let partyInFrance = prompt('Party in France?').toLowerCase();
 
 	if (partyInFrance === 'yes' || partyInFrance === 'y') {
-		// console.log('You better work, bitch')
+		//console.log('You better work, bitch')
 		alert('You better work, bitch.')
 		numberCorrect += 1
 	} else if (partyInFrance === 'no' || partyInFrance === 'n') {
-		console.log('You sound kinda boring, no offense.')
-		// alert('You sound kind of boring, no offense')
+		//console.log('You sound kinda boring, no offense.')
+		alert('You sound kind of boring, no offense')
 	} else {
-		console.log('Alright, alright, we\'re done now.')
-		// alert('Alright, alright, we\'re done now.')
+		//console.log('Alright, alright, we\'re done now.')
+		alert('Alright, alright, we\'re done now.')
 	}
 }
 partyFrance();
@@ -211,13 +211,13 @@ function laurelCry() {
 
 		if (parseInt(userResponse) === cry) {
 			alert('If I round down, I mean')
-			console.log('It\'s cool to cry, you should try it.')
+			//console.log('It\'s cool to cry, you should try it.')
 			// add to my total number correct with += 1
 			numberCorrect += 1
 			// break out of the loop if the answer was correct
 			break
 		} else {
-			console.log('Sorry babe, try again.');
+			//console.log('Sorry babe, try again.');
 			alert(`Try again, you have ${attemptsRemaining} attempts remaining.`)
 			// repeat the prompt if answer was incorrect
 			userResponse = prompt('How many times have I cried this week?') //.toLowerCase();
