@@ -8,7 +8,7 @@ I'm building a website all about me, my goals, and Britney Spears I guess, using
 
 ### Links and Resources
 
-* I used  <https://www.w3schools.com/html/html_emojis.asp> to help me withusing emojis in HTML.
+* I used  <https://www.w3schools.com/html/html_emojis.asp> to help me with using emojis in HTML.
 
 * I used <https://medium.com/markdown-monster-blog/getting-images-into-markdown-documents-and-weblog-posts-with-markdown-monster-9ec6f353d8ec> to help me link the photo here in the ReadMe.
 
